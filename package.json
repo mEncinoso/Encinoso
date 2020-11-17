@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/mEncinoso/ExposicionEncinoso#readme",
   "dependencies": {
+    "bootstrap": "^4.5.3",
     "postcss-scss": "^3.0.4"
   },
   "devDependencies": {
