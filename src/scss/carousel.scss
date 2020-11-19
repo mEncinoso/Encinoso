@@ -1,0 +1,10 @@
+$carousel_background: #ff0;
+$img_width: 100%;
+
+.carousel-item img{
+    width: $img_width;
+}
+
+.carousel-col{
+    padding: inherit;
+}

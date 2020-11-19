@@ -32,6 +32,8 @@
   "homepage": "https://github.com/mEncinoso/ExposicionEncinoso#readme",
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "postcss-scss": "^3.0.4"
   },
   "devDependencies": {
@@ -42,17 +44,17 @@
     "eslint": "^7.13.0",
     "eslint-loader": "^4.0.2",
     "eslint-webpack-plugin": "^2.3.0",
-    "htmlnano": "^0.2.7",
+    "htmlnano": "^0.2.8",
     "imagemin-cli": "^6.0.0",
     "node-sass": "^5.0.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
-    "postcss-cli": "^8.2.0",
+    "postcss-cli": "^8.3.0",
     "posthtml": "^0.13.4",
-    "posthtml-cli": "^0.8.0",
-    "posthtml-modules": "^0.6.2",
-    "stylelint": "^13.7.2",
-    "webpack": "^5.4.0",
+    "posthtml-cli": "^0.8.1",
+    "posthtml-modules": "^0.6.4",
+    "stylelint": "^13.8.0",
+    "webpack": "^5.5.0",
     "webpack-cli": "^4.2.0"
   }
 }

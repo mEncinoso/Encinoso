@@ -1,0 +1,63 @@
+$cover_start_color: #020024;
+$cover_end_color: #00d4ff;
+$cover_background: rgb(2, 0, 36);
+$gradient_start: rgba(2, 0, 36, 1) 0%;
+$gradient_mid: rgba(9, 9, 121, 1) 35%;
+$gradient_end: rgba(0, 212, 255, 1) 100%;
+$cover_height: 10%;
+$logo_min_width: 15%;
+$logo_width: 15%;
+
+.header {
+  //cssgradient.io
+  background: $cover_background;
+
+  background: -moz-linear-gradient(
+    90deg,
+    $gradient_start,
+    $gradient_mid,
+    $gradient_end
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    $gradient_start,
+    $gradient_mid,
+    $gradient_end
+  );
+
+  background: linear-gradient(
+    90deg,
+    $gradient_start,
+    $gradient_mid,
+    $gradient_end
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$cover_start_color,endColorstr=$cover_end_color,GradientType=1);
+  //
+
+  height: $cover_height;
+}
+
+.logo {
+  width: $logo_width;
+  min-width: $logo_min_width;
+}
+
+.logo_name {
+  display: flex;
+  align-items: center; /* align vertical */
+}
+
+@media (min-width: 768px) {
+  .logo_name {
+    justify-content: flex-end;
+  }
+}
+
+.company_name{
+  color: #fff;
+}
+
+.nav_links{
+  align-self: center;
+}
