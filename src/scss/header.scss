@@ -7,6 +7,7 @@ $gradient_end: rgba(0, 212, 255, 1) 100%;
 $cover_height: 10%;
 $logo_min_width: 15%;
 $logo_width: 15%;
+$cover_letters_color: #fff;
 
 .header {
   //cssgradient.io
@@ -55,9 +56,17 @@ $logo_width: 15%;
 }
 
 .company_name{
-  color: #fff;
+  color: $cover_letters_color;
 }
 
 .nav_links{
   align-self: center;
+}
+
+.nav_links a{
+  color: $cover_letters_color;
+}
+
+.nav_links a:hover{
+  color: green;
 }

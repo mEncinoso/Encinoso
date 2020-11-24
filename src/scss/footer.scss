@@ -1,0 +1,20 @@
+$footer_start_color: #020024;
+$footer_end_color: #00d4ff;
+$footer_background: rgba(17, 16, 16, 0.664);
+$letter_color: #fff;
+
+.footer {
+  //cssgradient.io
+  background: $footer_background;
+}
+
+.footer_content {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+}
+
+.footer_content p,
+h6 {
+  color: $letter_color;
+}
+

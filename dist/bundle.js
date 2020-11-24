@@ -19,7 +19,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack://exposicionencinoso/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_0__);\n //import $ from \"jquery\";\n\ndocument.getElementById(\"initialContentLink\").addEventListener(\"click\", function () {\n  showContent(\"init_content\");\n});\ndocument.getElementById(\"locationLink\").addEventListener(\"click\", function () {\n  showContent(\"location_content\");\n});\ndocument.getElementById(\"contact_link\").addEventListener(\"click\", function () {\n  showContent(\"contact_content\");\n});\n\nfunction showContent(content) {\n  var children = document.getElementById(\"content\").children;\n\n  for (var i = 0; i < children.length; i++) {\n    if (children[i].id != content) {\n      document.getElementById(children[i].id).style.display = \"none\";\n    } else {\n      document.getElementById(children[i].id).style.display = \"block\";\n    }\n  }\n}\n\n//# sourceURL=webpack://exposicionencinoso/./src/js/main.js?");
 
 /***/ }),
 
