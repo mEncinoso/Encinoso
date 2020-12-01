@@ -9,6 +9,18 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/listeners.js":
+/*!*****************************!*\
+  !*** ./src/js/listeners.js ***!
+  \*****************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+eval("document.getElementById(\"initialContentLink\").addEventListener(\"click\", function () {\n  showContent(\"init_content\");\n});\ndocument.getElementById(\"locationLink\").addEventListener(\"click\", function () {\n  showContent(\"location_content\");\n});\ndocument.getElementById(\"contact_link\").addEventListener(\"click\", function () {\n  showContent(\"contact_content\");\n});\n\nfunction showContent(content) {\n  var children = document.getElementById(\"content\").children;\n\n  for (var i = 0; i < children.length; i++) {\n    if (children[i].id != content) {\n      document.getElementById(children[i].id).style.display = \"none\";\n    } else {\n      document.getElementById(children[i].id).style.display = \"block\";\n    }\n  }\n}\n\n//# sourceURL=webpack://exposicionencinoso/./src/js/listeners.js?");
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
@@ -19,7 +31,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_0__);\n //import $ from \"jquery\";\n\ndocument.getElementById(\"initialContentLink\").addEventListener(\"click\", function () {\n  showContent(\"init_content\");\n});\ndocument.getElementById(\"locationLink\").addEventListener(\"click\", function () {\n  showContent(\"location_content\");\n});\ndocument.getElementById(\"contact_link\").addEventListener(\"click\", function () {\n  showContent(\"contact_content\");\n});\n\nfunction showContent(content) {\n  var children = document.getElementById(\"content\").children;\n\n  for (var i = 0; i < children.length; i++) {\n    if (children[i].id != content) {\n      document.getElementById(children[i].id).style.display = \"none\";\n    } else {\n      document.getElementById(children[i].id).style.display = \"block\";\n    }\n  }\n}\n\n//# sourceURL=webpack://exposicionencinoso/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _listeners__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./listeners */ \"./src/js/listeners.js\");\n/* harmony import */ var _listeners__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_listeners__WEBPACK_IMPORTED_MODULE_2__);\n\n\n //Change content margin-top depending on nav-bar header height (on load and rezising)\n\njquery__WEBPACK_IMPORTED_MODULE_1___default()(window).on(\"load\", function () {\n  setPaddingTop();\n});\njquery__WEBPACK_IMPORTED_MODULE_1___default()(window).on(\"resize\", function () {\n  setPaddingTop();\n});\n\nfunction setPaddingTop() {\n  var content_padding_top;\n  content_padding_top = jquery__WEBPACK_IMPORTED_MODULE_1___default()(\"header\").height();\n  jquery__WEBPACK_IMPORTED_MODULE_1___default()(\"#carousel\").css(\"padding-top\", content_padding_top);\n}\n/*$(document).scroll(function() {\r\n    $('#header').css({width: $(this).scrollTop() > 100? \"50%\":\"100%\"});\r\n});*/\n//Resize nav-bar size when scroll is not at top\n\n/*var scroll;\r\nvar upper_height = 10;\r\nvar lower_height = 5;\r\n\r\n$(window).on(\"scroll\", function () {\r\n  scroll = $(window).scrollTop();\r\n  if (scroll > 0) {\r\n    $(\"#header\").css(\"height\", lower_height + \"%\");\r\n  } else {\r\n    $(\"#header\").css(\"height\", upper_height + \"%\");\r\n  }\r\n  setPaddingTop();\r\n});*/\n\n//# sourceURL=webpack://exposicionencinoso/./src/js/main.js?");
 
 /***/ }),
 

@@ -5,10 +5,27 @@
 @import "location.scss";
 @import "footer.scss";
 
+#header{
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+}
+
+#carousel{
+  z-index: 1;
+}
 
 #whatsapp-icon {
   position: fixed;
   right: 10px;
+  bottom: 10px;
+  text-align: center;
+  padding: 3px;
+}
+
+#facebook-icon{
+  position: fixed;
+  right: 70px;
   bottom: 10px;
   text-align: center;
   padding: 3px;

@@ -1,28 +1,42 @@
 import "bootstrap";
-//import $ from "jquery";
+import $ from "jquery";
+import "./listeners";
 
-
-document.getElementById("initialContentLink").addEventListener("click", function(){
-    showContent("init_content");
-});
-    
-document.getElementById("locationLink").addEventListener("click", function(){
-    showContent("location_content");
+//Change content margin-top depending on nav-bar header height (on load and rezising)
+$(window).on("load", function(){
+    setPaddingTop();
 });
 
-document.getElementById("contact_link").addEventListener("click", function(){
-    showContent("contact_content");
+$(window).on("resize", function () {
+    setPaddingTop();
 });
 
-
-function showContent(content){
-    var children = document.getElementById("content").children;
-    for (var i = 0; i < children.length; i++){
-        if(children[i].id != content){
-            document.getElementById(children[i].id).style.display = "none";
-        }else{
-            document.getElementById(children[i].id).style.display = "block";
-        }
-    }    
+function setPaddingTop(){
+    var content_padding_top;
+    content_padding_top = $("header").height();
+    $("#carousel").css("padding-top", content_padding_top);
 }
+
+/*$(document).scroll(function() {
+    $('#header').css({width: $(this).scrollTop() > 100? "50%":"100%"});
+});*/
+
+//Resize nav-bar size when scroll is not at top
+/*var scroll;
+var upper_height = 10;
+var lower_height = 5;
+
+$(window).on("scroll", function () {
+  scroll = $(window).scrollTop();
+  if (scroll > 0) {
+    $("#header").css("height", lower_height + "%");
+  } else {
+    $("#header").css("height", upper_height + "%");
+  }
+  setPaddingTop();
+});*/
+
+
+
+
 
