@@ -1,0 +1,13 @@
+$brand_logo_width: 40%;
+$brand_logo_border: 20px;
+
+
+.brand_logo_row div{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.brand_logo{
+    width: $brand_logo_width;
+    border-radius: $brand_logo_border;
+}
