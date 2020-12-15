@@ -15,6 +15,7 @@
     "build:images": "imagemin src/images/**/* --out-dir=dist/images",
     "build:js": "webpack --mode=production",
     "watch": "run-p serve watch:*",
+    "watchButImg": "run-p serve watch:css && watch:html && watch:js",
     "watch:css": "onchange \"src/scss\" -- npm run build:css",
     "watch:html": "onchange \"src/views\" -- npm run build:html",
     "watch:images": "onchange \"src/images\" -- npm run build:images",

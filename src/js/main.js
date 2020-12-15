@@ -1,20 +1,23 @@
 import "bootstrap";
 import $ from "jquery";
 import "./listeners";
+import "./bootstrap-props.js";
 
 //Change content margin-top depending on nav-bar header height (on load and rezising)
 $(window).on("load", function(){
-    setPaddingTop();
+    setPaddingTop("expo");
 });
 
 $(window).on("resize", function () {
-    setPaddingTop();
+    setPaddingTop("expo");
 });
 
-function setPaddingTop(){
+function setPaddingTop(id){
+  if(id=="expo"){
     var content_padding_top;
     content_padding_top = $("header").height();
     $("#carousel").css("padding-top", content_padding_top);
+  }
 }
 
 /*$(document).scroll(function() {

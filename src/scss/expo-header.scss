@@ -40,6 +40,7 @@ $cover_letters_color: #fff;
 }
 
 .logo {
+  cursor: pointer;
   width: $logo_width;
   min-width: $logo_min_width;
 }
@@ -73,4 +74,13 @@ $cover_letters_color: #fff;
 
 .nav_links a:hover {
   color: green;
+}
+
+.back-icon-div img{
+  width: 85%;
+}
+
+.back-icon-div{
+  padding-top: 1em;
+  padding-bottom: 1em;
 }

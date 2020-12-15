@@ -1,33 +1,12 @@
 @import "node_modules/bootstrap/scss/bootstrap";
-@import "header.scss";
-@import "carousel.scss";
-@import "content.scss";
-@import "location.scss";
-@import "brands.scss";
-@import "footer.scss";
+@import "expo-index.scss";
 
-#header{
-  z-index: 2;
-  position: fixed;
-  width: 100%;
+
+#index-content{
+    display: block;
 }
 
-#carousel{
-  z-index: 1;
-}
-
-#whatsapp-icon {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  text-align: center;
-  padding: 3px;
-}
-
-#facebook-icon{
-  position: fixed;
-  right: 70px;
-  bottom: 10px;
-  text-align: center;
-  padding: 3px;
+#expo{
+    display: none;
+    transition-duration: 5s;
 }
