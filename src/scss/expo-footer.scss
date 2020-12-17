@@ -2,11 +2,9 @@ $footer_start_color: #020024;
 $footer_end_color: #00d4ff;
 $footer_background: rgba(17, 16, 16, 0.664);
 $letter_color: #fff;
-
-.footer {
-  //cssgradient.io
-  background: $footer_background;
-}
+$footer_width: 100%;
+$footer_bottom: 0;
+$footer_height: 12rem;
 
 .footer_content {
   padding-top: 1.5em;
@@ -18,3 +16,9 @@ h6 {
   color: $letter_color;
 }
 
+#footer {
+  position: absolute;
+  bottom: $footer_bottom;
+  width: $footer_width;
+  background: $footer_background;
+}

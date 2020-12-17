@@ -2,11 +2,6 @@ $carousel_background: #ff0;
 $img_width: 100%;
 $carousel_start_color: #020024;
 $carousel_end_color: #00d4ff;
-$carousel_background: rgb(2, 0, 36);
-$gradient_start: rgba(2, 0, 16, 0.3) 0%;
-$gradient_mid: rgba(9, 9, 100, 0.8) 35%;
-$gradient_end: rgba(0, 212, 235, 0.8) 100%;
-
 
 .carousel-item img {
   width: $img_width;
@@ -14,34 +9,6 @@ $gradient_end: rgba(0, 212, 235, 0.8) 100%;
 
 .carousel-int-col {
   padding: inherit;
-}
-
-.carousel {
-  //cssgradient.io
-  background: $carousel_background;
-
-  background: -moz-linear-gradient(
-    90deg,
-    $gradient_start,
-    $gradient_mid,
-    $gradient_end
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    $gradient_start,
-    $gradient_mid,
-    $gradient_end
-  );
-
-  background: linear-gradient(
-    90deg,
-    $gradient_start,
-    $gradient_mid,
-    $gradient_end
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$carousel_start_color,endColorstr=$carousel_end_color,GradientType=1);
-  //
 }
 
 .carousel-indicators{

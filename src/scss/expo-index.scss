@@ -6,6 +6,11 @@
 @import "expo-brands.scss";
 @import "expo-footer.scss";
 
+$content_background: rgb(2, 0, 36);
+$gradient_start: rgba(2, 0, 16, 0.3) 0%;
+$gradient_mid: rgba(9, 9, 100, 0.8) 35%;
+$gradient_end: rgba(0, 212, 235, 0.8) 100%;
+
 #header{
   z-index: 2;
   position: fixed;
@@ -32,3 +37,40 @@
   padding: 3px;
 }
 
+#page-container{
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#expo {
+  //cssgradient.io
+  background: $content_background;
+
+  background: -moz-linear-gradient(
+    90deg,
+    $gradient_start,
+    $gradient_mid,
+    $gradient_end
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    $gradient_start,
+    $gradient_mid,
+    $gradient_end
+  );
+
+  background: linear-gradient(
+    90deg,
+    $gradient_start,
+    $gradient_mid,
+    $gradient_end
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$content_start_color,endColorstr=$content_end_color,GradientType=1);
+  //
+
+}
