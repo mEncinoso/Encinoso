@@ -1,12 +1,14 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "expo-index.scss";
 
-
-#index-content{
-    display: block;
+#index-content {
+  display: block;
 }
 
-#expo{
-    display: none;
-    transition-duration: 5s;
+#expo {
+  display: none;
+}
+
+#ferre {
+  display: none;
 }

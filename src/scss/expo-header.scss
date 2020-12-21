@@ -8,6 +8,12 @@ $cover_height: 8%;
 $logo_min_width: 15%;
 $logo_width: 15%;
 $cover_letters_color: #fff;
+$text_shadow_1: 1px 1px 2px black;
+$text_shadow_2: 0 0 25px blue;
+$text_shadow_3: 0 0 5px darkblue;
+$nav-active-background: rgba(70, 70, 150, 0.1);
+$company_letter_space: -1px;
+$company_font_weight: bold;
 
 .header {
   //cssgradient.io
@@ -57,11 +63,13 @@ $cover_letters_color: #fff;
   /*.company_name{
     font-size: px;
   }*/
-
 }
 
 .company_name {
   color: $cover_letters_color;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: $company_font_weight;
+  letter-spacing: $company_letter_space;
 }
 
 .nav_links {
@@ -73,14 +81,18 @@ $cover_letters_color: #fff;
 }
 
 .nav_links a:hover {
-  color: green;
+  text-shadow: $text_shadow_1, $text_shadow_2, $text_shadow_3;
 }
 
-.back-icon-div img{
+.back-icon-div img {
   width: 85%;
 }
 
-.back-icon-div{
+.back-icon-div {
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+.nav-link.active {
+  background-color: $nav-active-background !important;
 }
