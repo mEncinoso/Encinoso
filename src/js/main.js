@@ -4,9 +4,12 @@ import "./listeners";
 import "./bootstrap-props.js";
 
 //Change content margin-top depending on nav-bar header height (on load and rezising)
-$(window).on("load", function(){
-    setPaddingTop("expo");
+document.getElementById("btn-toExpo").addEventListener("click", function(){
+  setPaddingTop("expo");
 });
+/*$(window).on("load", function(){
+    setPaddingTop("expo");
+});*/
 
 $(window).on("resize", function () {
     setPaddingTop("expo");
