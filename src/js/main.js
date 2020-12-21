@@ -7,9 +7,6 @@ import "./bootstrap-props.js";
 document.getElementById("btn-toExpo").addEventListener("click", function(){
   setPaddingTop("expo");
 });
-/*$(window).on("load", function(){
-    setPaddingTop("expo");
-});*/
 
 $(window).on("resize", function () {
     setPaddingTop("expo");

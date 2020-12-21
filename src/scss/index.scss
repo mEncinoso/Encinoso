@@ -1,6 +1,10 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "expo-index.scss";
 
+$index_title_space: -1px;
+$index_title_font_weight: bold;
+
+
 #index-content {
   display: block;
 }
@@ -11,4 +15,20 @@
 
 #ferre {
   display: none;
+}
+
+.buttons-row-container{
+  height: 100vh;
+  align-content: center;
+}
+
+.main-website-selector-container{
+  text-align: center;
+}
+
+.index-title{
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: $index_title_font_weight;
+  letter-spacing: $index_title_space;
+  text-align: center;
 }
