@@ -1,0 +1,24 @@
+$carousel_background: #ff0;
+$img_width: 100%;
+$carousel_start_color: #020024;
+$carousel_end_color: #00d4ff;
+
+.carousel-item img {
+  width: $img_width;
+}
+
+.carousel-int-col {
+  padding: inherit;
+}
+
+.carousel-indicators{
+  z-index: 1;
+}
+
+.carousel-caption{
+  z-index: 0;
+}
+
+.carousel-text{
+  background-color: rgba(2, 0, 16, 0.45);
+} 

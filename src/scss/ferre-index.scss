@@ -1,27 +1,27 @@
 @import "node_modules/bootstrap/scss/bootstrap";
-@import "expo-header.scss";
-@import "expo-carousel.scss";
-@import "expo-content.scss";
-@import "expo-location.scss";
-@import "expo-brands.scss";
-@import "expo-footer.scss";
+@import "ferre-header.scss";
+@import "ferre-carousel.scss";
+@import "ferre-content.scss";
+@import "ferre-location.scss";
+@import "ferre-brands.scss";
+@import "ferre-footer.scss";
 
 $content_background: rgb(2, 0, 36);
 $gradient_start: rgba(2, 0, 16, 0.3) 0%;
 $gradient_mid: rgba(9, 9, 100, 0.8) 35%;
 $gradient_end: rgba(0, 212, 235, 0.8) 100%;
 
-#expo_header{
+#ferre_header{
   z-index: 2;
   position: fixed;
   width: 100%;
 }
 
-#expo_carousel{
+#ferre_carousel{
   z-index: 1;
 }
 
-#expo_whatsapp-icon {
+#ferre_whatsapp-icon {
   position: fixed;
   right: 10px;
   bottom: 10px;
@@ -29,7 +29,7 @@ $gradient_end: rgba(0, 212, 235, 0.8) 100%;
   padding: 3px;
 }
 
-#expo_facebook-icon{
+#ferre_facebook-icon{
   position: fixed;
   right: 70px;
   bottom: 10px;
@@ -37,16 +37,16 @@ $gradient_end: rgba(0, 212, 235, 0.8) 100%;
   padding: 3px;
 }
 
-#expo_page-container{
+#ferre_page-container{
   position: relative;
   min-height: 100vh;
 }
 
-#expo_content-wrap {
+#ferre_content-wrap {
   padding-bottom: 2.5rem;    /* Footer height */
 }
 
-#expo {
+#ferre {
   //cssgradient.io
   background: $content_background;
 

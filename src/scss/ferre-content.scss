@@ -2,12 +2,12 @@ $content_background: #ff0;
 $content_start_color: #020024;
 $content_end_color: #00d4ff;
 
-.expo_content {
+.ferre_content {
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-#expo_init_content {
+#ferre_init_content {
   display: block;
   text-align: justify;
   visibility: visible;
@@ -15,14 +15,14 @@ $content_end_color: #00d4ff;
   animation: fade 1s;
 }
 
-#expo_location_content {
+#ferre_location_content {
   display: none;
   visibility: hidden;
   opacity: 0;
   animation: fade 1s;
 }
 
-#expo_contact_content {
+#ferre_contact_content {
   display: none;
   visibility: hidden;
   opacity: 0;
@@ -39,7 +39,7 @@ $content_end_color: #00d4ff;
   }
 }
 
-.expo_content-text {
+.ferre_content-text {
   background-color: rgba(255, 255, 255, 0.5);
   font-family: "Helvetica Neue", sans-serif;
   font-size: 16px;
@@ -48,14 +48,14 @@ $content_end_color: #00d4ff;
   padding: 0;
 }
 
-.expo_content-text p {
+.ferre_content-text p {
   padding: 0.3em 1em 0.3em 1em;
 }
 
-.expo_content-img {
+.ferre_content-img {
   width: 100%;
 }
 
-.expo_img-container {
+.ferre_img-container {
   margin-top: 1rem;
 }

@@ -15,7 +15,7 @@ $nav-active-background: rgba(70, 70, 150, 0.1);
 $company_letter_space: -1px;
 $company_font_weight: bold;
 
-.expo_header {
+.ferre_header {
   //cssgradient.io
   background: $cover_background;
 
@@ -45,19 +45,19 @@ $company_font_weight: bold;
   height: $cover_height;
 }
 
-.expo_logo {
+.ferre_logo {
   cursor: pointer;
   width: $logo_width;
   min-width: $logo_min_width;
 }
 
-.expo_logo_name {
+.ferre_logo_name {
   display: flex;
   align-items: center; /* align vertical */
 }
 
 @media (min-width: 768px) {
-  .expo_logo_name {
+  .ferre_logo_name {
     justify-content: flex-end;
   }
   /*.company_name{
@@ -65,25 +65,25 @@ $company_font_weight: bold;
   }*/
 }
 
-.expo_company_name {
+.ferre_company_name {
   color: $cover_letters_color;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: $company_font_weight;
   letter-spacing: $company_letter_space;
 }
 
-.expo_nav_links {
+.ferre_nav_links {
   align-self: center;
 }
 
-.expo_nav_links a {
+.ferre_nav_links a {
   color: $cover_letters_color;
 }
 
-.expo_nav_links a:hover {
+.ferre_nav_links a:hover {
   text-shadow: $text_shadow_1, $text_shadow_2, $text_shadow_3;
 }
 
-.expo_nav_links.active {
+.ferre_nav_links.active {
   background-color: $nav-active-background !important;
 }

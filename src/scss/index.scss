@@ -1,9 +1,12 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "expo-index.scss";
+@import "ferre-index.scss";
 
 $index_title_space: -1px;
 $index_title_font_weight: bold;
-
+$buttons_row_height: 90vh;
+$title_row_height: 10vh;
+$selector_container_padding: 0;
 
 #index-content {
   display: block;
@@ -17,18 +20,36 @@ $index_title_font_weight: bold;
   display: none;
 }
 
-.buttons-row-container{
-  height: 100vh;
+.title-row {
+  height: 10vh;
+}
+
+.buttons-row-container {
+  height: 90vh;
   align-content: center;
 }
 
-.main-website-selector-container{
+.main-website-selector-container {
   text-align: center;
+  align-content: center;
+  padding: $selector_container_padding;
 }
 
-.index-title{
+.index-title {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: $index_title_font_weight;
   letter-spacing: $index_title_space;
   text-align: center;
+}
+
+.website-selector {
+  width: 100%;
+  transition: transform 1s, filter 1.25s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(50%);
+}
+
+.website-selector:hover {
+  filter: brightness(100%);
+  transform: scale(1);
 }

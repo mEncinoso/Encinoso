@@ -8,32 +8,32 @@ $brands_hover_oppacity: 0.75;
 $brands_text_shadow: 3px 0 0 #000;
 $brands_text_color: #fff;
 
-.expo_brand_logo_row div {
+.ferre_brand_logo_row div {
   text-align: center;
   margin-bottom: $brand_row_pad_bot;
 }
 
-.expo_brand_logo {
+.ferre_brand_logo {
   width: $brand_logo_width;
   border-radius: $brand_logo_border;
   transition-duration: $brands_trans_duration;
 }
 
-.expo_brand_logo:hover {
+.ferre_brand_logo:hover {
   transition-duration: $brands_trans_duration;
   opacity: $brands_hover_oppacity;
 }
 
-.expo_brands_title {
+.ferre_brands_title {
   padding-bottom: $brands_title_pad_bot;
 }
 
-.expo_brands_footer {
+.ferre_brands_footer {
   padding-bottom: $brands_footer_pad;
   padding-top: $brands_footer_pad;
 }
 
-.expo_brand_text{
+.ferre_brand_text{
     text-align: center;
     text-decoration-line: underline;
     text-shadow: $brands_text_shadow;
