@@ -1,9 +1,36 @@
 <div class="container-fluid" id="expo_location_content">
   <div class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-10 expo_map_frame">
+    <div class="col-md-3 expo-schedule-div">
+      <table class="expo-schedule-table">
+        <thead>
+          <tr>
+            <th colspan="2">Horario de Apertura</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes - Jueves</td>
+            <td>09:00 - 13:00 / 16:00 - 19:30</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>09:00 - 13:00 / 16:00 - 19:00</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>10:00 - 13:00</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-7 expo_map_frame">
       <div class="maps" style="width: 100%">
-        <div style="width: 100%">
+        <div>
           <iframe
             id="mapsIframe"
             width="100%"
