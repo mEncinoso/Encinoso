@@ -6,7 +6,7 @@ $gradient_mid: rgba(9, 9, 121, 1) 35%;
 $gradient_end: rgba(0, 212, 255, 1) 100%;
 $cover_height: 8%;
 $logo_min_width: 15%;
-$logo_width: 15%;
+$logo_width: 100%;
 $cover_letters_color: #fff;
 $text_shadow_1: 1px 1px 2px black;
 $text_shadow_2: 0 0 25px rgb(0, 195, 255);
@@ -45,6 +45,11 @@ $company_font_weight: bold;
   height: $cover_height;
 }
 
+.expo_logo_col{
+  padding: 0;
+  margin: auto;
+}
+
 .expo_logo {
   cursor: pointer;
   width: $logo_width;
@@ -58,7 +63,7 @@ $company_font_weight: bold;
 
 @media (min-width: 768px) {
   .expo_logo_name {
-    justify-content: flex-end;
+    //justify-content: flex-end;
   }
   /*.company_name{
     font-size: px;

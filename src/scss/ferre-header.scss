@@ -45,6 +45,11 @@ $company_font_weight: bold;
   height: $cover_height;
 }
 
+.ferre_logo_col{
+  padding: 0;
+  margin: auto;
+}
+
 .ferre_logo {
   cursor: pointer;
   width: $logo_width;
@@ -58,7 +63,7 @@ $company_font_weight: bold;
 
 @media (min-width: 768px) {
   .ferre_logo_name {
-    justify-content: flex-end;
+    //justify-content: flex-end;
   }
   /*.company_name{
     font-size: px;
