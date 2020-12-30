@@ -1,6 +1,15 @@
-@import "node_modules/bootstrap/scss/bootstrap";
-@import "expo-index.scss";
+//Ferre/Expo properties
 @import "ferre-index.scss";
+@import "expo-index.scss";
+
+//Generic properties
+@import "generic-header.scss";
+@import "generic-carousel.scss";
+@import "generic-content.scss";
+@import "generic-brands.scss";
+@import "generic-location.scss";
+@import "generic-footer.scss";
+
 
 $webContent_bgcolor: rgb(203, 240, 255);
 $index_title_space: -1px;
@@ -8,6 +17,9 @@ $index_title_font_weight: bold;
 $buttons_row_height: 90vh;
 $title_row_height: 10vh;
 $selector_container_padding: 0;
+$center_alignment: center;
+$btn_row_padding_bot: 2em;
+$full_width: 100%;
 
 #webContent {
   background-color: $webContent_bgcolor;
@@ -26,13 +38,13 @@ $selector_container_padding: 0;
 }
 
 .buttons-row-container {
-  align-content: center;
-  padding-bottom: 2em;
+  align-content: $center_alignment;
+  padding-bottom: $btn_row_padding_bot;
 }
 
 .main-website-selector-container {
-  text-align: center;
-  align-content: center;
+  text-align: $center_alignment;
+  align-content: $center_alignment;
   padding: $selector_container_padding;
 }
 
@@ -40,11 +52,11 @@ $selector_container_padding: 0;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: $index_title_font_weight;
   letter-spacing: $index_title_space;
-  text-align: center;
+  text-align: $center_alignment;
 }
 
 .website-selector {
-  width: 100%;
+  width: $full_width;
   transition: filter 0.2s ease-in-out;
   filter: brightness(75%);
 }

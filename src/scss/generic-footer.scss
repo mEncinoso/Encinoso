@@ -6,17 +6,17 @@ $footer_width: 100%;
 $footer_bottom: 0;
 $footer_height: 12rem;
 
-.expo_footer_content {
+.footer_content {
   padding-top: 1.5em;
   padding-bottom: 1em;
 }
 
-.expo_footer_content p,
+.footer_content p,
 h6 {
   color: $letter_color;
 }
 
-#expo_footer {
+#footer {
   //position: absolute;
   bottom: $footer_bottom;
   width: $footer_width;

@@ -18,25 +18,25 @@ $st_tbody-tr-last_border_bot: 2px solid #009879;
 $st_tbody-tr_active_font_weight: bold;
 $st_tbody-tr_active_color: #009879;
 
-.ferre_maps {
+.maps {
   width: $maps_width;
 }
 
-.ferre_map_frame {
+.map_frame {
   padding: inherit;
 }
 
-.ferre-schedule-div {
+.schedule-div {
   padding: $sd_padding;
 }
 
 @media (max-width: 768px) {
-  .ferre-schedule-div {
+  .schedule-div {
     padding: $sd_device_padding;
   }
 }
 
-.ferre-schedule-table {
+.schedule-table {
   width: $st_width;
   height: $st_height;
   border-collapse: $st_border;
@@ -45,34 +45,34 @@ $st_tbody-tr_active_color: #009879;
   box-shadow: $st_box_shadow;
 }
 
-.ferre-schedule-table thead tr {
+.schedule-table thead tr {
   background-color: $st_th_bg_color;
   color: $st_th_color;
   text-align: $st_txt_align;
 }
 
-.ferre-schedule-table th,
-.ferre-schedule-table td {
+.schedule-table th,
+.schedule-table td {
   padding: $st_th-tr_padding;
 }
 
-.ferre-schedule-table tbody tr {
+.schedule-table tbody tr {
   border-bottom: $st_tbody-tr_border_bot;
 }
 
-.ferre-schedule-table tbody tr:nth-of-type(odd) {
+.schedule-table tbody tr:nth-of-type(odd) {
   background-color: $st_tbody-tr_odd_bg_color;
 }
 
-.ferre-schedule-table tbody tr:nth-of-type(even) {
+.schedule-table tbody tr:nth-of-type(even) {
   background-color: $st_tbody-tr_even_bg_color;
 }
 
-.ferre-schedule-table tbody tr:last-of-type {
+.schedule-table tbody tr:last-of-type {
   border-bottom: $st_tbody-tr-last_border_bot;
 }
 
-.ferre-schedule-table tbody tr.active-row {
+.schedule-table tbody tr.active-row {
   font-weight: $st_tbody-tr_active_font_weight;
   color: $st_tbody-tr_active_color;
 }

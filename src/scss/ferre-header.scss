@@ -1,24 +1,8 @@
-$cover_start_color: #020024;
-$cover_end_color: #00d4ff;
-$cover_background: rgb(2, 0, 36);
-$gradient_start: rgba(0, 212, 255, 1) 0%;
-$gradient_mid: rgba(9, 9, 121, 1) 65%;
-$gradient_end: rgba(2, 0, 36, 1) 100%;
-$cover_height: 8%;
-$logo_min_width: 15%;
-$logo_width: 15%;
-$cover_letters_color: #fff;
-$text_shadow_1: 1px 1px 2px black;
-$text_shadow_2: 0 0 25px rgb(0, 195, 255);
-$text_shadow_3: 0 0 5px rgb(0, 88, 139);
-$nav-active-background: rgba(70, 107, 150, 0.1);
-$company_letter_space: -1px;
-$company_font_weight: bold;
+$gradient_start: rgba(2, 0, 36, 1) 0%;
+$gradient_mid: rgba(9, 9, 121, 1) 35%;
+$gradient_end: rgba(0, 212, 255, 1) 100%;
 
 .ferre_header {
-  //cssgradient.io
-  background: $cover_background;
-
   background: -moz-linear-gradient(
     90deg,
     $gradient_start,
@@ -39,56 +23,4 @@ $company_font_weight: bold;
     $gradient_mid,
     $gradient_end
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$cover_start_color,endColorstr=$cover_end_color,GradientType=1);
-  //
-
-  height: $cover_height;
-}
-
-.ferre_logo_col{
-  padding: 0;
-  margin: auto;
-}
-
-.ferre_logo {
-  cursor: pointer;
-  width: $logo_width;
-  min-width: $logo_min_width;
-}
-
-.ferre_logo_name {
-  display: flex;
-  align-items: center; /* align vertical */
-}
-
-@media (min-width: 768px) {
-  .ferre_logo_name {
-    //justify-content: flex-end;
-  }
-  /*.company_name{
-    font-size: px;
-  }*/
-}
-
-.ferre_company_name {
-  color: $cover_letters_color;
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: $company_font_weight;
-  letter-spacing: $company_letter_space;
-}
-
-.ferre_nav_links {
-  align-self: center;
-}
-
-.ferre_nav_links a {
-  color: $cover_letters_color;
-}
-
-.ferre_nav_links a:hover {
-  text-shadow: $text_shadow_1, $text_shadow_2, $text_shadow_3;
-}
-
-.ferre_nav_links.active {
-  background-color: $nav-active-background !important;
 }

@@ -1,18 +1,15 @@
-$content_background: #ff0;
-$content_start_color: #020024;
-$content_end_color: #00d4ff;
-
-.ferre_content {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
+$display: block;
+$text_align: justify;
+$visibility: visible;
+$opacity: 1;
+$animation: fade 1s;
 
 #ferre_init_content {
-  display: block;
-  text-align: justify;
-  visibility: visible;
-  opacity: 1;
-  animation: fade 1s;
+  display: $display;
+  text-align: $text_align;
+  visibility: $visibility;
+  opacity: $opacity;
+  animation: $animation;
 }
 
 #ferre_location_content {
@@ -37,25 +34,4 @@ $content_end_color: #00d4ff;
   100% {
     opacity: 1;
   }
-}
-
-.ferre_content-text {
-  background-color: rgba(255, 255, 255, 0.5);
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: justify;
-  padding: 0;
-}
-
-.ferre_content-text p {
-  padding: 0.3em 1em 0.3em 1em;
-}
-
-.ferre_content-img {
-  width: 100%;
-}
-
-.ferre_img-container {
-  margin-top: 1rem;
 }

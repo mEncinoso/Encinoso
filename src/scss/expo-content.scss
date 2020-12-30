@@ -1,18 +1,15 @@
-$content_background: #ff0;
-$content_start_color: #020024;
-$content_end_color: #00d4ff;
-
-.expo_content {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
+$display: block;
+$text_align: justify;
+$visibility: visible;
+$opacity: 1;
+$animation: fade 1s;
 
 #expo_init_content {
-  display: block;
-  text-align: justify;
-  visibility: visible;
-  opacity: 1;
-  animation: fade 1s;
+  display: $display;
+  text-align: $text_align;
+  visibility: $visibility;
+  opacity: $opacity;
+  animation: $animation;
 }
 
 #expo_location_content {
@@ -37,25 +34,4 @@ $content_end_color: #00d4ff;
   100% {
     opacity: 1;
   }
-}
-
-.expo_content-text {
-  background-color: rgba(255, 255, 255, 0.5);
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: justify;
-  padding: 0;
-}
-
-.expo_content-text p {
-  padding: 0.3em 1em 0.3em 1em;
-}
-
-.expo_content-img {
-  width: 100%;
-}
-
-.expo_img-container {
-  margin-top: 1rem;
 }

@@ -1,0 +1,31 @@
+$img_width: 100%;
+$padding_left_zero: 0;
+$padding_right_zero: 0;
+
+.carousel-item img {
+  width: $img_width;
+}
+
+.carousel-int-col {
+  padding: inherit;
+}
+
+@media (max-width: 768px) {
+  .carousel-int-col {
+    padding-left: $padding_left_zero;
+    padding-right: $padding_right_zero;
+  }
+}
+
+.carousel-caption,
+.d-none,
+.d-md-block,
+.carousel-text,
+.carousel-indicators,
+.carousel-caption {
+  z-index: 1;
+}
+
+.carousel-text {
+  background-color: rgba(2, 0, 16, 0.45);
+}
