@@ -1,6 +1,5 @@
 $cover_start_color: #020024;
 $cover_end_color: #00d4ff;
-$cover_background: rgb(2, 0, 36);
 $cover_height: 8%;
 $logo_min_width: 15%;
 $logo_width: 100%;
@@ -9,12 +8,12 @@ $text_shadow_1: 1px 1px 2px black;
 $text_shadow_2: 0 0 25px rgb(0, 195, 255);
 $text_shadow_3: 0 0 5px rgb(0, 88, 139);
 $nav-active-background: rgba(70, 70, 150, 0.1);
+
 $company_letter_space: -1px;
 $company_font_weight: bold;
 
 .header {
   //cssgradient.io
-  background: $cover_background;
   height: $cover_height;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$cover_start_color,endColorstr=$cover_end_color,GradientType=1);
 }
@@ -59,10 +58,10 @@ $company_font_weight: bold;
   color: $cover_letters_color;
 }
 
-.nav_links a:hover {
+.nav-pills a:hover {
   text-shadow: $text_shadow_1, $text_shadow_2, $text_shadow_3;
 }
 
-.nav_links.active {
+.nav-pills .nav_links.active {
   background-color: $nav-active-background;
 }

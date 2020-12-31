@@ -19,7 +19,9 @@ $title_row_height: 10vh;
 $selector_container_padding: 0;
 $center_alignment: center;
 $btn_row_padding_bot: 2em;
-$full_width: 100%;
+$img_width: 95%;
+$img_border_radius: 20px;
+$img-margin: 1em 1em 1em 1em;
 
 #webContent {
   background-color: $webContent_bgcolor;
@@ -48,6 +50,11 @@ $full_width: 100%;
   padding: $selector_container_padding;
 }
 
+.main-website-selector-container img{
+  margin: $img-margin;
+  border-radius: $img_border_radius;
+}
+
 .index-title {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: $index_title_font_weight;
@@ -56,7 +63,7 @@ $full_width: 100%;
 }
 
 .website-selector {
-  width: $full_width;
+  width: $img_width;
   transition: filter 0.2s ease-in-out;
   filter: brightness(75%);
 }
