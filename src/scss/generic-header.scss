@@ -14,6 +14,7 @@ $company_font_weight: bold;
 
 .header {
   //cssgradient.io
+  z-index: 3;
   height: $cover_height;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$cover_start_color,endColorstr=$cover_end_color,GradientType=1);
 }

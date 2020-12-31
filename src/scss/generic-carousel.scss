@@ -21,10 +21,13 @@ $padding_right_zero: 0;
 .d-none,
 .d-md-block,
 .carousel-text,
-.carousel-indicators,
 .carousel-caption {
+  z-index: 0;
+}
+.carousel-indicators{
   z-index: 1;
 }
+
 
 .carousel-text {
   background-color: rgba(2, 0, 16, 0.45);

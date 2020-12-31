@@ -30,7 +30,7 @@ $st_tbody-tr_active_color: #009879;
   padding: $sd_padding;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .schedule-div {
     padding: $sd_device_padding;
   }
