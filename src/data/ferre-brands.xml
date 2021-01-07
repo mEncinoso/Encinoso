@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<brands>
+  <brand>
+    <title>Aicer</title>
+    <alt>aicer-logo</alt>
+    <img_url>../../images/Aicer.webp</img_url>
+    <url>https://mibricolaje.com/brand/17-aicer</url>
+  </brand>
+  <brand>
+    <title>Airmec</title>
+    <alt>airmec-logo</alt>
+    <img_url>../../images/Airmec.webp</img_url>
+    <url>https://mibricolaje.com/brand/21-airmec</url>
+  </brand>
+  <brand>
+    <title>Black & Decker</title>
+    <alt>Black_&_Decker</alt>
+    <img_url>../../images/BlackAndDecker.webp</img_url>
+    <url>https://www.blackanddecker.es/products/all-categories</url>
+  </brand>
+  <brand>
+    <title>Dewalt</title>
+    <alt>Dewalt</alt>
+    <img_url>../../images/DeWalt.webp</img_url>
+    <url>https://www.dewalt.es/</url>
+  </brand>
+  <brand>
+    <title>Larry House</title>
+    <alt>LarryHouse</alt>
+    <img_url>../../images/LarryHouse.webp</img_url>
+    <url>https://mibricolaje.com/brand/38-larryhouse</url>
+  </brand>
+  <brand>
+    <title>Weber</title>
+    <alt>Weber</alt>
+    <img_url>../../images/Weber.webp</img_url>
+    <url>https://www.es.weber/</url>
+  </brand>
+</brands>

@@ -19,7 +19,7 @@ document.getElementById("expo_locationLink").addEventListener("click", function 
 });
 
 document.getElementById("expo_contact_link").addEventListener("click", function () {
-  showContent("expo_content", "expo_contact_content");
+  showContent("expo_content", "expo_brands_content");
 });
 
 
@@ -36,7 +36,7 @@ showContent("ferre_content", "ferre_location_content");
 });
 
 document.getElementById("ferre_contact_link").addEventListener("click", function () {
-showContent("ferre_content", "ferre_contact_content");
+showContent("ferre_content", "ferre_brands_content");
 });
 
 function showContent(container, content) {

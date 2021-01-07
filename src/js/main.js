@@ -1,6 +1,7 @@
 import "bootstrap";
 import $ from "jquery";
 import "./listeners";
+import "./brands_xml_importer.js";
 import "./bootstrap-props.js";
 
 //Change content margin-top depending on nav-bar header height (on load and rezising)
