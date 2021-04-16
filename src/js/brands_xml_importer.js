@@ -23,7 +23,7 @@ function generateBrandLogos(brands, id){
 
     htmlToAppend+="<div class=\"col-md-3 col-6\">";
     htmlToAppend+="<a href=\""+url+"\" title=\""+title+"\" target=\"_blank\">"
-    +"<img src=\""+img_url+"\" title=\""+title+"\" alt=\""+alt+"\" class=\"brand_logo\"/></a></div>";
+    +"<img loading=\"lazy\" src=\""+img_url+"\" title=\""+title+"\" alt=\""+alt+"\" class=\"brand_logo\"/></a></div>";
 
     if(counter==1){
       htmlToAppend+="</div>";
